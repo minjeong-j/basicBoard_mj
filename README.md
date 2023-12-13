@@ -1,10 +1,11 @@
 # 프로젝트 개요<br>
 
-프로젝트 : 베이직 게시판<br>
-프로젝트 목표 : html, css, js, jsp를 활용해 DB와 연동 가능한 게시 제작 <br>
-개발 언어 : html, css, js, jQuery, jsp, Java, Oracle <br>
+프로젝트 : 베이직 게시판 <br>
+프로젝트 목표 : html, css, js, jsp를 활용해 DB와 연동 가능한 게시판 제작 <br>
+개발 언어 : Java, Spring, Oracle, html, css, js, jQuery, jsp <br>
 개발 환경 : Eclipse, SQL Developer, Apache Tomcat v9.0 <br>
 <br>
+
 -------------------------------------------------------------------------------------
 # 개발 설계
 1. 게시판 리스트 페이지
