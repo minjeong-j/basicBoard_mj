@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="Member">
+
+	<insert id="memberInsert" parameterType="com.sunrise.board.vo.MemberVO">
+		INSERT INTO MEMBER(
+		MEM_ID,
+		MEM_PW,
+		MEM_NAME,
+		MEM_PHONE,
+		MEM_ADDRESS) 
+		VALUES(
+		#{memId}, 
+		#{memPw},
+		#{memName},
+		#{memPhone},
+		#{memAddress})
+	</insert>
+	
+	<select id="idCnt" parameterType="com.sunrise.board.vo.MemberVO" resultType="java.lang.Integer">
+		<![CDATA[
+			SELECT COUNT * 
+			FROM MEMBER
+			WHERE MEM_ID = #{memId}
+		]]>
+	</select>
+	
+</mapper>

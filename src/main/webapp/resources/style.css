@@ -1,0 +1,87 @@
+@charset "UTF-8";
+	*{
+		text-align: center;
+	}
+	
+	body {
+		margin-top: 100px;
+	}
+	
+	table, th, td {
+		border : 1px solid black;
+		border-collapse : collapse;
+		text-align : center;
+	}
+	
+	table {
+		margin: 10px auto 20px auto;
+		width: 840px;
+	}
+	
+	input, textarea {
+		border: none;
+		text-align: left;
+	}
+	
+	a {
+  		text-decoration: none;
+	}
+	
+	input {
+		height: 30px;
+	}
+		
+	input:focus {outline:none;}
+	
+	textarea {
+		height: 500px;
+		width: 800px;
+		padding-top: 8px;
+		padding-left: 8px;
+	}
+	
+	textarea:focus {outline:none;}
+	
+	.modify {
+		text-align: center;
+	}
+	
+	.login {
+		float: left;
+		margin-left: 50px;
+		margin-right: 20px;
+	}
+	.join {
+		float: left;
+	}
+	
+	.fr {
+		float: right;
+		margin-right: 100px;
+	}
+	
+	.t {
+		padding-top: 55px;
+	}
+	
+	.modify {
+		padding-top: 15px;
+	}
+	
+	.search {
+		padding-top: 8px;
+	}
+	
+	.checkboxA, .checkboxB, .checkboxC, .checkboxD, .checkboxE {
+		 position: relative;
+ 		 top: 9px;
+	}
+	
+	.paging {
+		padding-top: 15px;
+	}
+	
+	.board_title {
+		width: 800px;
+		text-align: left;
+	}

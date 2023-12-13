@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="Board">
+
+	<select id="boardList" resultType="com.sunrise.board.vo.BoardVO">
+		select * from board
+	</select>
+
+	<select id="totalChkMapper" resultType="int">
+		select count(*) from board
+	</select>
+
+	<insert id="boardInsert" parameterType="com.sunrise.board.vo.BoardVO">
+		INSERT INTO BOARD
+    	(BOARD_TYPE,BOARD_NUM,BOARD_TITLE,BOARD_COMMENT)
+   		VALUES
+    	(#{BOARD_TYPE}, SEQ_NUM.NEXTVAL, #{BOARD_TITLE}, #{BOARD_COMMENT})
+	</insert>	
+	
+	<select id="detail" parameterType="int" resultType="com.sunrise.board.vo.BoardVO">
+		SELECT BOARD_TITLE, CREATOR, BOARD_COMMENT, BOARD_NUM
+		FROM BOARD 
+		WHERE BOARD_NUM = #{BOARD_NUM} 
+	</select>
+	
+	<update id="boardUpdate" parameterType="com.sunrise.board.vo.BoardVO">
+      UPDATE BOARD 
+      SET
+      BOARD_TITLE = #{BOARD_TITLE},
+      BOARD_COMMENT = #{BOARD_COMMENT} 
+      WHERE BOARD_NUM = #{BOARD_NUM}   
+   </update>
+	
+	<select id="comCodeList" resultType="com.sunrise.board.vo.BoardVO">
+		SELECT *
+		FROM COM_CODE
+		WHERE CODE_TYPE = 'MENU'
+	</select>
+	
+	<delete id="delete" parameterType="int">
+		DELETE *
+		FROM BOARD
+		WHERE BOARD_NUM = #{BOARD_NUM}
+	</delete>
+</mapper>
