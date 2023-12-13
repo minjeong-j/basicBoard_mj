@@ -1,9 +1,6 @@
-# basicBoard_mj
+# 프로젝트 개요<br>
 
--------------------------------------------------------------------------------------
-# 프로젝트 개요
-
-프로젝트 : 베이직 게시판 
+프로젝트 : 베이직 게시판<br>
 프로젝트 목표 : html, css, js, jsp를 활용해 DB와 연동 가능한 게시 제작 <br>
 개발 언어 : html, css, js, jQuery, jsp, Java, Oracle <br>
 개발 환경 : Eclipse, SQL Developer, Apache Tomcat v9.0 <br>
